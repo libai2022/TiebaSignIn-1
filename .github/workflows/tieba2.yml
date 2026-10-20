@@ -5,7 +5,7 @@ name: Start
 on:
   workflow_dispatch:  # 加这个，方便你手动点
   push:
-    branches: [ main ]  # 限制下分支，避免 feature 分支也触发
+    branches: [ master, main ]  # 限制下分支，避免 feature 分支也触发
   schedule:
     - cron: '30 22 * * *'  # UTC 22:30 = 北京时间 6:30
 
